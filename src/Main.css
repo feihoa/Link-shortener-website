@@ -1,0 +1,53 @@
+.main {
+    text-align: center;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 80%;
+    
+  }
+  
+
+  .main-form{
+    display: flex;
+    flex-direction: column;
+    min-width: 80%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-form__label{
+    font-size: 30px;
+    color: rgb(23, 166, 238);
+    font-weight: 1000;
+
+  }
+
+  .main-form__input{
+
+        min-height: 5vh;
+        min-width: 80%;
+        font-size: large;
+        margin-bottom: 5px;
+        margin-top: 5px;
+  }
+
+  .main-form__copy{
+    display: inline;
+    margin-bottom: 5px;
+  }
+
+  .main-form__error{
+    margin-bottom: 5px;
+
+  }
+
+  .main-form__button{     
+    border: 1px solid grey;
+    color: rgb(23, 166, 238);
+    font-weight: 900;
+    background-color: rgb(211, 212, 238);
+    min-height: 40px;
+    min-width: 40%;
+}
