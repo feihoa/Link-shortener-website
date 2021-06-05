@@ -5,8 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(https://www.publicdomainpictures.net/pictures/300000/nahled/empty-round-room.jpg);
+  background-image: url(https://c.pxhere.com/photos/49/16/blur_focus_lights_night_bokeh_black_blurred_lights_city-813540.jpg!d);
   background-color: rgba(255, 255, 255, 0.8);
+  background-size: cover;
+
 }
 
 code {

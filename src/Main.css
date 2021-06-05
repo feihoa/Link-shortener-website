@@ -19,23 +19,30 @@
 
   .main-form__label{
     font-size: 30px;
-    color: rgb(23, 166, 238);
+    color: white;
     font-weight: 1000;
+    margin-bottom: 40px;
 
   }
 
   .main-form__input{
-
+        outline: none;
+        border: none;
         min-height: 5vh;
-        min-width: 80%;
+        min-width: 70%;
         font-size: large;
-        margin-bottom: 5px;
-        margin-top: 5px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+  }
+
+  .main-form__input:focus{
+
+    outline: 3px solid rgb(18, 172, 172);
   }
 
   .main-form__copy{
     display: inline;
-    margin-bottom: 5px;
+    margin-bottom: 30px;
   }
 
   .main-form__error{
@@ -45,9 +52,10 @@
 
   .main-form__button{     
     border: 1px solid grey;
-    color: rgb(23, 166, 238);
-    font-weight: 900;
-    background-color: rgb(211, 212, 238);
+    color: white;
+    font-weight: 500;
+    background-color: rgb(18, 172, 172);
     min-height: 40px;
+    font-size: large;
     min-width: 40%;
 }
