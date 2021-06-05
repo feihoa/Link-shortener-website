@@ -30,6 +30,17 @@
         min-width: 80%;
         font-size: large;
         margin-bottom: 5px;
+        margin-top: 5px;
+  }
+
+  .main-form__copy{
+    display: inline;
+    margin-bottom: 5px;
+  }
+
+  .main-form__error{
+    margin-bottom: 5px;
+
   }
 
   .main-form__button{     
