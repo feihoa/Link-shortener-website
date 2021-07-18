@@ -6,7 +6,7 @@ function Footer() {
 
         return (
             <footer className="footer root__section">
-                <p className="footer__copyright">© 2021 Link shortener website</p>
+                <p className="footer__copyright">© 2021 Link shortener website. Bit.ly API</p>
             </footer>
         );
     

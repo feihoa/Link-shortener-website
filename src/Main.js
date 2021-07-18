@@ -16,6 +16,7 @@ function Main() {
         setValue(e.target.value);
         setError(handleError(e));
         setLongLink(e.target.value)
+        document.querySelector(".main-form__copied").textContent = "";
 
     }
 
@@ -39,7 +40,8 @@ function Main() {
         if(linkRef.current.value && !error){
             api.shortLink(linkRef.current.value).then((res) => {
                 setValue(res.link);
-                handleClick(res.link)
+                handleCopy(res.link)
+                document.querySelector(".main-form__copied").textContent = "Copied!";
             }).catch((err) => {
                 setError("Error " + err);
               })
@@ -47,18 +49,22 @@ function Main() {
         
     }
 
-    const handleClick = () => {
+    const handleCopy = () => {
         document.querySelector(".main-form__input").select();
         document.execCommand("copy");
+        document.querySelector(".main-form__copied").textContent = "Copied!";
+
+
     }
 
         return (
             <div className="main root__section">
                 <form className="form main-form" onSubmit={handleSubmit}>
                     <label className="main-form__label">Write your link here</label>
+                    <span className="main-form__copied"></span>
                     <input value={value} ref={linkRef} minLength="5" onChange={handleChange} required type="url" className="main-form__input"></input>
                     <span  id="error" className="error main-form__error">{error}</span>      
-                                        <button onClick={handleClick} id="copy" className=" main-form__copy">Copy</button>      
+                    <button onClick={handleCopy} id="copy" className=" main-form__copy" type="button">Copy</button>      
                     <button type="submit"  className="main-form__button">Shorten</button>
                 </form >
             </div>
